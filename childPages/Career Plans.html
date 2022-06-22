@@ -11,82 +11,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
-
   <style>
-  body  {
-  background-image: url(https://66.media.tumblr.com/82bfcf92c1600043b36fcd5ca01d5989/tumblr_pstpb2WYwc1vr2agf_1280.jpg);
- background-repeat: no-repeat;
- background-size: cover;
-  font-family: "Bebas Neue"
-        }
-.h1 {
+  * {
+    box-sizing: border-box;
+  }
+
+  /* unvisited link */
+       a:link {
+     color: #000000;
+              }
+
+   /* visited link */
+        a:visited{
+     color: #98494E;
+                }
+
+   /* mouse over link */
+        a:hover{
+         color: #000000;
+               }
+
+         body  {
+         background-image: url(https://66.media.tumblr.com/82bfcf92c1600043b36fcd5ca01d5989/tumblr_pstpb2WYwc1vr2agf_1280.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+         font-family: "Bebas Neue"
+               }
+
+  /* Style the header */
+  header {
+    background-color: #666;
+    padding: 30px;
     text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    padding: 20px;
+     background: #ccc;
+  }
+
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #FFFFFF;
+    height: 300px; /* only for demonstration, should be removed */
+  }
+
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 5px;
+    text-align: center;
+    color: white;
+  }
+
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
     }
-</style>
-</head>
- <body>
-   <audio controls autoplay>
-  <source src="Media/MusicDownload/02 Etude In G Minor, Op. 24, No. 15 ΓÇô Giuseppe Concone.mp3" type="audio/mpeg">
+  }
+  </style>
+  </head>
+  <body>
 
-</audio>
-    <header>
-      <h1 style="font-size:15vw">Career Plans</h1>
-    </header>
+  <header>
+    <h2>Career Plans</h2>
+  </header>
 
-    <br>
+  <section>
+    <nav>
 
-    <section>
-     <h1 style="font-size:13vw"><header>During my Adult Life<header></h1>
-            <article style="font-size: 5vw">
-         Main Aspiration: planning to build software professionally. Although I am very new to coding,
-         I know how happy it makes me to create something.
-         I am one step further in becoming a software engineer,
-         seeing as I have been accepted in the University of
-         Alberta Faculty of Science - Bachelor of Specialization Computing
-         Science: Software Practice.
-            </article>
-    </section>
+    </nav>
 
-    <br>
-    <br>
-
-     <section>
-     <h1  style="font-size:10vw"><header> Retirement Plans</header></h1>
-       <article style="font-size: 3vw">Even in retirement, I hope to be employed, or doing volunteer
-         work. Having “work to do” provides a lot of structure in one’s life
-         (when to get up, eating at specific times). In addition, by being of service to someone else,
-         you gain useful transferable skills. After consistently taking long
-         shifts at the Edmonton Food Bank, I can work efficiently for a longer
-         period of time. This helps me succeed in school. Lastly, working lets one's
-         efforts affect more than just themselves</article>
-         <br><br><br><br><br>
-
-         <blockquote cite="https://www.positivityblog.com/quotes-for-work/#:~:text=87%20Inspirational%20Quotes%20for%20Work%20%28Motivation%20to%20Work,a%20Rough%20or%20Stressful%20Day%20at%20Work.%20">
-            <!-- Date Accessed 20220301-->
-          </blockquote>
-          <p style="font-size:7vw" class="Italic">
-            <strong> “The future depends on what you do today.” </strong>
-            <em><a href="https://www.positivityblog.com/quotes-for-work/#:~:text=87%20Inspirational%20Quotes%20for%20Work%20%28Motivation%20to%20Work,a%20Rough%20or%20Stressful%20Day%20at%20Work.%20" target="_blank">
-               - Mahatma Gandhi</a>
-            </em>
-
-         <br><br><br>
-      <header><h1 style="font-size: 10vw" >YoU cAN'T rEtiRE mE:</h1> <h2 style="font-size:5vw">Things I Would Like To Do When Retired:<h2></header>
-           <og>
-             <li class="Italic" style="font-size: 3vw"> Work at a bakery.
-             <li class="Italic" style="font-size: 3vw"> Work at a doggy day care, or agility training centre.
-             <li class="Italic" style="font-size: 3vw"> Work at a plant nursery.
-           </og>
-     </section>
-</body>
-
-<br><br><br><br><br>
+    <article>
+      <h1>During my Adult Life</h1>
+      <p> Main Aspiration: planning to build software professionally. Although I am very new to coding,
+           I know how happy it makes me to create something.</p>
+      <p>I am one step further in becoming a software engineer,
+           seeing as I have been accepted in the University of
+           Alberta Faculty of Science - Bachelor of Specialization Computing
+           Science: Software Practice.</p>
+    </article>
+  </section>
 
   <footer>
-
-  <h3>&copy Sarah Muir, powered by lilpoosaroo in GitHub</h3>
+    <p style="font-size:7vw" class="Italic">
+      <strong> “The future depends on what you do today.” </strong>
+     <em><a href="https://www.positivityblog.com/quotes-for-work/#:~:text=87%20Inspirational%20Quotes%20for%20Work%20%28Motivation%20to%20Work,a%20Rough%20or%20Stressful%20Day%20at%20Work.%20" target="_blank">
+                 - Mahatma Gandhi</a>
+              </em></p>
   </footer>
+  <section>
+    <nav>
+    <p>  Things I want to do when retired </p>
+    <ul>
+    <li class="Italic" style="font-size: 3vw"> Work at a bakery.
+    <li class="Italic" style="font-size: 3vw"> Work at a doggy day care, or agility training centre.
+    <li class="Italic" style="font-size: 3vw"> Work at a plant nursery.
+    </ul>
+    </nav>
 
-
-</body>
-</html>
+    <article>
+      <h1>Retirement Plans</h1>
+      <p> Even in retirement, I hope to be employed, or doing volunteer
+        work. Having “work to do” provides a lot of structure in one’s life
+        (when to get up, eating at specific times).</p>
+      <p>In addition, by being of service to someone else,
+      you gain useful transferable skills. After consistently taking long
+      shifts at the Edmonton Food Bank, I can work efficiently for a longer
+      period of time. This helps me succeed in school. Lastly, working lets one's
+      efforts affect more than just themselves</p>
+    </article>
+  </section>
+  <footer>
+  <h3>&copy Sarah Muir, powered by lilpoosaroo in GitHub</h3>
+</footer>
+  </body>
+  </html>
+</head>
+ <body>
